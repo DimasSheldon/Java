@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Praktikum Sistem Terdistribusi: JSON.</h2>
+
+<p id="demo"></p>
+
+<script>
+    var myJSON = '{ "Nama":"Dimas Sheldon", "NIM":1415002, "Jurusan":"Mobile Technology", "Alamat":"Jln. Tubagus Ismail Dalam"}';
+    var myObj = JSON.parse(myJSON);
+    document.getElementById("demo").innerHTML = "<b>" + myObj.Nama + "</b>" + "<br>" + myObj.NIM + "<br>" + myObj.Jurusan + "<br>" + myObj.Alamat;
+</script>
+
+</body>
+</html>

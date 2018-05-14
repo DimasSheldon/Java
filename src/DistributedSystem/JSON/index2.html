@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Praktikum Sistem Terdistribusi: JSON Array</h1>
+
+<p id="demo"></p>
+
+<script>
+
+    var mahasiswa, x, i;
+    x = "";
+    mahasiswa = [
+        {"nama": "Dimas Sheldon", "nim": 1415002, "jurusan": "Mobile Technology"},
+        {"nama": "Dany Hasiando Panggabean", "nim": 1315016, "jurusan": "Media & Internet Technology"},
+        {"nama": "Rosa Gaghana", "nim": 1315009, "jurusan": "Media & Internet Technology"}
+    ];
+
+    for (i in mahasiswa) {
+        x += "<h2>" + mahasiswa[i].nama + "</h2>";
+        x += mahasiswa[i].nim + "<br>";
+        x += mahasiswa[i].jurusan + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = x;
+
+</script>
+
+</body>
+</html>
